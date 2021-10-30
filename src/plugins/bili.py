@@ -5,18 +5,17 @@ from bilibili_api import user, dynamic, sync, Credential
 
 uid = [6027188]
 usr_ins = user.User(uid[0])
-credential_dict = {
-    "bili_jct": "d463ee24cad94b1408e028185cc7e0ca",
-    "buvid3": "53D31444-E4A2-4928-88AF-115327D5803F155836infoc",
-    "sessdata": "68bc4f0e%2C1642912464%2Ccdbf6%2A71",
-}
+# credential_dict = {
+#     "bili_jct": "d463ee24cad94b1408e028185cc7e0ca",
+#     "buvid3": "53D31444-E4A2-4928-88AF-115327D5803F155836infoc",
+#     "sessdata": "68bc4f0e%2C1642912464%2Ccdbf6%2A71",
+# }
 credential = Credential(bili_jct="d463ee24cad94b1408e028185cc7e0ca",
                         buvid3="53D31444-E4A2-4928-88AF-115327D5803F155836infoc",
                         sessdata="68bc4f0e%2C1642912464%2Ccdbf6%2A71")
 
 
 async def get_dynamic_from_user():
-    dynamics = []
     page = await usr_ins.get_dynamics(0)
     # 给某条动态点赞(需要输入credential)
     dyna_id = page["cards"][0]["desc"]['dynamic_id']

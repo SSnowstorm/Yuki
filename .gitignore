@@ -139,3 +139,13 @@ dmypy.json
 .pytype/
 
 # End of https://www.toptal.com/developers/gitignore/api/python
+/server/data/images/3df938a5b10a04b44a8031fa4752facb.image
+/server/config.yml
+/server/data/leveldb/CURRENT
+/server/device.json
+/server/go-cqhttp.bat
+/server/go-cqhttp_windows_amd64.exe
+/server/data/leveldb/LOCK
+/server/data/leveldb/LOG
+/server/data/leveldb/MANIFEST-000000
+/server/session.token
